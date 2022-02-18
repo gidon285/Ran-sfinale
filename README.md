@@ -27,6 +27,11 @@ sudo apt install nodejs
 
 sudo apt install npm
 
+sudo apt install tshark
+
+sudo pip install json
+
+
 now we need to clear the dependencies. first create a folder and open the therminal, insert
 
 npm init (this will set up npm for you)
@@ -39,7 +44,7 @@ npm i selenium-chrome-clear-cache
 
 run the next command:
 
-sudo python3 gen.py
+sudo python3 sniff.py
 
 this will start wireshark and the sniffing process and save a file named save.pcap!
 
@@ -53,7 +58,7 @@ sudo cp save.pcap <'dest folder'> where dest folder is our main folder for this 
 
 close the sniff.py therminal.
 
-and run toJSON.py by typing python3 toJSON.py.(you will need to enter password for tshark operation)
+and run convert.py by typing python3 convert.py.(you will need to enter password for tshark operation)
 
 now you have the data.json file, and you are ready to go.
 
